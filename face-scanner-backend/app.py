@@ -4,6 +4,8 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 import cv2
 import face_recognition
 import pickle
+import os
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -26,6 +28,15 @@ class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)
+
+UPLOAD_FOLDER = 'face_images/'
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+def allowed_file(filename):
+    return '.' in filename and \
+            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 def generate_frames():
     while True:
@@ -55,6 +66,31 @@ def generate_frames():
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
+@app.route('\upload', methods=['GET', 'POST'])
+@login_required
+def upload_file():
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return redirect(request.url)
+        file = request.files['file']
+        if file.filename == '':
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+
+            #Encoding the face and updating face_encodings.pkl
+            image = face_recognition.load_image_file(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            face_encodings = face_recognition.face_encodings(image)[0]
+            known_face_encodings.append(face_encodings)
+            known_face_names.append(os.path.splitext(filename)[0])
+            with open('face_encodings.pkl', 'wb') as f:
+                pickle.dump((known_face_encodings, known_face_names), f)
+            return redirect(url_for('index'))
+    return render_template('upload.html')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
