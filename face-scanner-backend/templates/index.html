@@ -1,16 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Face Scanner</title>
-    <link rel="{{url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
 </head>
 <body>
-
-
-    <h1> Face Scanner</h1>
+    <h1>Welcome to the Facial Recognition Scanner</h1>
     <img src="{{url_for('video_feed') }}" alt="Face Scanner">
-
-
+    <h2><a href="{{ url_for('upload_file') }}">Upload Image</a></h2>
+    <h2><a href="{{ url_for('video_feed') }}">Live Video Feed</a></h2>
+    {% if current_user.is_authenticated %}
+        <p>Welcome, {{ current_user.username }}!</p>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+    {% endif %}
 </body>
 </html>
