@@ -1,7 +1,7 @@
 from flask import Flask, render_template, Response
 import cv2
-import  face_recognition
-import  pickle
+import face_recognition
+import pickle
 
 app = Flask(__name__)
 
