@@ -8,26 +8,6 @@ Detect and recognize faces in images.
 Encode face images and save the encodings.
 Compare faces to determine matches.
 
-**Project Structure**
-Facial_Recognition_Scanner/
-├── face-scanner-backend/
-│   ├── app.py
-│   ├── encode_faces.py
-│   ├── face_encodings.pkl
-│   ├── requirements.txt
-│   ├── face_images/
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── style.css
-│   └── templates/
-│       └── index.html
-├── face-scanner-frontend/
-│   ├── src/
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   └── index.js
-└── README.md
-
 
 **Requirements**
 Python 3.6+
