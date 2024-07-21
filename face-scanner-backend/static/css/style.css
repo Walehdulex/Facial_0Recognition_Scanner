@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial sans-serif;
+    background-color: #f8f9fa;
 }
 
 h1{
@@ -16,4 +17,20 @@ img {
     width: 80%;
     max-width: 600px;
     border: 2px solid #000;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.form-group {
+    text-align: left;
+}
+
+#video-feed.d-none {
+    display: none;
 }

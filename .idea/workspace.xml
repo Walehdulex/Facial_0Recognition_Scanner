@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="960bf1e8-b1bf-4a06-abf9-55754228f523" name="Changes" comment="Added more image samples&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Facial Recognition Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Facial Recognition Scanner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face-scanner-backend/face_encodings.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/face-scanner-backend/face_encodings.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face-scanner-backend/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/face-scanner-backend/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face-scanner-backend/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/face-scanner-backend/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face-scanner-backend/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/face-scanner-backend/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face-scanner-backend/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/face-scanner-backend/templates/upload.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,17 @@
         <option value="HTML File" />
         <option value="CSS File" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -50,16 +68,21 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "Python.app.executor": "Run",
+    "Python.counterclass.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.tcreate.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/awale/Documents/My Python projects/Facial Recognition Scanner/face-scanner-backend",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/awale/Documents/Operating System/Week 6/counterclass.py",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -94,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="counterclass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Facial Recognition Scanner" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,12 +126,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Operating System/Week 6" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face-scanner-backend/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Operating System/Week 6/counterclass.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,10 +140,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.app" />
-    </list>
+    <configuration name="tcreate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Facial Recognition Scanner" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Operating System/Week 6" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Operating System/Week 6/tcreate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tcreate" />
+        <item itemvalue="Python.counterclass" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -140,7 +188,10 @@
       <updated>1717088428111</updated>
       <workItem from="1717088429461" duration="8631000" />
       <workItem from="1717198457878" duration="280000" />
-      <workItem from="1717364495482" duration="178000" />
+      <workItem from="1717364495482" duration="5116000" />
+      <workItem from="1721439761088" duration="740000" />
+      <workItem from="1721441033249" duration="279000" />
+      <workItem from="1721581616379" duration="849000" />
     </task>
     <servers />
   </component>
@@ -151,20 +202,11 @@
     <MESSAGE value="Added more image samples&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="Added more image samples&quot;" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/face-scanner-backend/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$tcreate.coverage" NAME="tcreate Coverage Results" MODIFIED="1721581784793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Operating System/Week 6" />
     <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$new_config.coverage" NAME="new config Coverage Results" MODIFIED="1717168073864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$app.coverage" NAME="app Coverage Results" MODIFIED="1717364674204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\awale\Documents\My Python projects\Facial Recognition Scanner\face-scanner-backend" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$counterclass.coverage" NAME="counterclass Coverage Results" MODIFIED="1721581688286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Operating System/Week 6" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$app.coverage" NAME="app Coverage Results" MODIFIED="1721582199347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\awale\Documents\My Python projects\Facial Recognition Scanner\face-scanner-backend" />
     <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$main.coverage" NAME="main Coverage Results" MODIFIED="1717364533465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$app_py.coverage" NAME="app.py Coverage Results" MODIFIED="1717190938675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\awale\Documents\My Python projects\Facial Recognition Scanner\face-scanner-backend" />
     <SUITE FILE_PATH="coverage/Facial_Recognition_Scanner$app1.coverage" NAME="app1 Coverage Results" MODIFIED="1717167766625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face-scanner-backend" />
